@@ -1,0 +1,21 @@
+.channelcard-div img{
+    height:150px;
+    width:150px;
+    border-radius: 50%;
+    position: absolute;
+    top: 35px;
+}
+.title{
+    margin-top: 100px;
+}
+@media screen and (max-width: 600px) {
+    .channelcard-div img{
+        height:100px;
+        width:100px;
+        border-radius: 50%;
+    }
+    .title{
+        margin-top: 5px;
+    }
+   
+}

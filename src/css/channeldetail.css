@@ -1,0 +1,11 @@
+@media screen and (max-width: 600px) {
+.channeldetail{
+    margin-top: -100px;;
+}
+}
+@media screen and (max-width: 350px) {
+    .box-div div{
+        width:100%;
+    }
+    }
+ 

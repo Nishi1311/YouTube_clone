@@ -1,0 +1,41 @@
+.category-btn:hover {
+    background-color: lightgray !important;
+    
+
+  }
+  
+  .category-btn{
+    border-radius: 20rem;
+    margin: 0.5rem 0.5rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+   
+  }
+  .category-btn:hover > .category-name{
+    font-weight:bold ;
+  }
+  .sidebar-div{
+    overflow-y: auto;
+    height:95%;
+    display: flex;
+    
+    flex-direction: column;
+    margin-top: 0.5rem;
+    
+    
+  }
+  @media screen and (max-width: 900px) {
+    
+      
+      
+      
+    .sidebar-div{
+      overflow-x:none;
+      
+      
+      flex-direction:row;
+  }
+}
+  
+   

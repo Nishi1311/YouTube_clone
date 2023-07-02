@@ -1,0 +1,58 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    height: 5rem;
+   
+    
+    position: sticky;
+    top:0;
+    z-index: 10000;
+    padding: 0 2rem;
+    background-color:beige;
+
+}
+.header-left{
+    display: flex;
+    align-items: center; 
+    gap:0.5rem;
+}
+.header-right{
+    display: flex;
+    align-items: center; 
+    gap:1.5rem;
+}
+.header-mid{
+   
+    width: 35rem;
+   
+    
+    
+}
+.header-mid > input{
+    flex: 1;
+    border: none;
+    margin: 0 8rem;
+}
+
+
+@media screen and (max-width: 700px) {
+    .header{
+        justify-content:flex-start;
+    }
+    .header-left{
+        margin-left: -2.5rem;
+    }
+    
+    .header-mid{
+   
+       max-width: 25rem;
+       
+        
+        
+    }
+    .header-right{
+        display:none;
+    }
+}
