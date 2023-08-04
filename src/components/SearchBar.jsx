@@ -17,8 +17,11 @@ export default SearchBar*/
 
 import React, { useState } from 'react';
 import { useNavigate } from "react-router-dom";
-import { Paper, IconButton } from '@mui/material';
+import {Paper,IconButton } from '@mui/material';
 import SearchIcon from '@mui/icons-material/Search';
+
+
+
 import '../css/searchBar.css';
 
 const SearchBar = () => {
@@ -27,6 +30,7 @@ const SearchBar = () => {
 
   const onhandleSubmit = (e) => {
     e.preventDefault();
+    
 
     if (searchTerm) {
       navigate(`/search/${searchTerm}`);
@@ -36,22 +40,24 @@ const SearchBar = () => {
   };
 
   return (
-    <Paper
+    <>
+    
+    
+   <Paper
       component='form'
       onSubmit={onhandleSubmit}
       sx={{
         borderRadius: 20,
-        border: '1px solid #e3e3e3',
-        pl: 2,
+        border: '2px solid black',
+        pl:2,
         boxShadow: 'none',
         mr: { sm: 5 },
         display:'flex',
-        justifyContent:'center',
-        gap: '3rem',
-        Width: { xs: '30%', md: '50%' },
+        justifyContent:'space-between',
+        gap: '2rem',
+        Width: { xs: '2%', md: '50%' },
 
-      }}
-    >
+      }}>
       <input
         className='search-bar'
         placeholder='Search...'
@@ -59,9 +65,18 @@ const SearchBar = () => {
         onChange={(e) => setSearchTerm(e.target.value)}
       />
       <IconButton type='submit' sx={{ p: '10px', color: 'red' }} aria-label='search'>
-        <SearchIcon />
+       <SearchIcon />
+        
+       
+
       </IconButton>
-    </Paper>
+      </Paper>
+      
+      
+    
+    
+    
+   </> 
   );
 };
 

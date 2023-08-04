@@ -25,13 +25,14 @@
     
     
   }
-  @media screen and (max-width: 900px) {
+  @media (max-width: 900px) {
     
       
       
       
     .sidebar-div{
-      overflow-x:none;
+      overflow-x:auto;
+      width: 100vmax;
       
       
       flex-direction:row;

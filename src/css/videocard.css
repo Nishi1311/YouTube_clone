@@ -1,54 +1,58 @@
+.card-div{
+    overflow-x: hidden;
+}
 .card-div-inner{
     max-width:400px;
     border-radius:none;
+    
 }
 .card-div-inner img{
     height:180px;
     width:400px;
     border-radius:10px;
     object-fit:cover;
+    display: flex;
 }
-@media screen and (max-width: 524px) {
-    
-  
+
+@media screen and (max-width: 435px) {
     .card-div-inner img{
         
-        max-width: 320px;
+        max-width: 350px;/*270*/
         object-fit: cover;
         border-radius:10px;
     }
-    
 }
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 381px) {
     .card-div-inner img{
         
-        max-width: 270px;
+        max-width: 300px;/*270*/
+        object-fit: cover;
+        border-radius:10px;
+    }
+}
+@media screen and (max-width: 330px) {
+    .card-div-inner img{
+        
+        max-width: 250px;/*270*/
+        object-fit: cover;
+        border-radius:10px;
+    }
+}
+@media screen and (max-width: 282px) {
+    .card-div-inner img{
+        
+        max-width: 200px;/*270*/
+        object-fit: cover;
+        border-radius:10px;
+    }
+}
+@media screen and (max-width: 224px) {
+    .card-div-inner img{
+        
+        max-width: 150px;/*270*/
         object-fit: cover;
         border-radius:10px;
     }
 }
 
-@media screen and (max-width: 367px) {
-    .card-div-inner img{
-        
-        max-width: 220px;
-        object-fit: cover;
-        border-radius:10px;
-    }
-    h4{
-        font-size: 12px;
-        font-weight: 600;
-    }
-}
-@media screen and (max-width: 310px) {
-    .card-div-inner img{
-        
-        max-width: 180px;
-        object-fit: cover;
-        border-radius:10px;
-    }
-    .card-div-inner{
-        max-width:180px;
-        border-radius:none;
-    }
-}
+    

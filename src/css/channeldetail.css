@@ -1,3 +1,14 @@
+.box-div-div{
+    display: flex;
+   
+    justify-content: center;
+    align-items: center;
+    
+
+}.box-div div{
+    max-width: 100%;
+
+}
 @media screen and (max-width: 600px) {
 .channeldetail{
     margin-top: -100px;;

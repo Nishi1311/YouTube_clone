@@ -30,7 +30,7 @@ const VideoCard = ({video:{id:{videoId},snippet},viewCount, likeCount }) => {
       </NavLink>
       <Box sx={{display:'flex', gap:'0.2rem'}}>
       <NavLink to={snippet?.channelId ? `/channel/${snippet?.channelId}` : demoChannelUrl}>
-        <Typography variant='subtitle2' fontWeight='bold' color='gray'>
+        <Typography variant='subtitle1' fontWeight='bold' color='gray'>
           {snippet?.channelTitle || demoChannelTitle}
           
         </Typography>
